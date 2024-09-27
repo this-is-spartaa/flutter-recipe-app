@@ -13,7 +13,13 @@ class RecipeListItem extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Image.asset('assets/$assetName.jpg'),
+          AspectRatio(
+            aspectRatio: 2 / 1,
+            child: Image.asset(
+              'assets/$assetName.jpg',
+              fit: BoxFit.cover
+            ),
+          ),
           Text(
             'Made $title',
             style: TextStyle(fontSize: 20),
