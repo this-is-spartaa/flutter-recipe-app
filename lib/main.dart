@@ -38,15 +38,18 @@ class RecipePage extends StatelessWidget {
           SizedBox(width: 15)
         ],
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          RecipeTitle(),
-          RecipeMenu(),
-          RecipeListItem(), // for coffee
-          RecipeListItem(), // for burger
-          RecipeListItem(), // for pizza
-        ],
+      body: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            RecipeTitle(),
+            RecipeMenu(),
+            RecipeListItem(), // for coffee
+            RecipeListItem(), // for burger
+            RecipeListItem(), // for pizza
+          ],
+        ),
       ),
     );
   }
